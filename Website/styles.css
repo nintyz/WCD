@@ -1,0 +1,393 @@
+/*
+    Aaron's Personal Portfolio
+    Filename: styles.css
+
+    Name: Aaron Poh Ji Teck
+    Adm No: 1828092
+    Class: DISM/FT/1A/22
+    Date: October 10 2018
+
+    WCD CA1 project
+*/
+
+/* Reset Styles */
+html {
+    font-size: 16px;
+}
+a, article, body, div, footer, header, h1, h2, h3, nav, p {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   color: ivory;
+   background-color: #34180f;
+   top: 0.4em;
+   left: auto;
+   right: 0.4em;
+   z-index: 101;
+}
+
+/* site navigation bar */
+div.navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+nav.sitenavigation {
+    color: #fff;
+    background-color: rgb(51, 51, 51);
+    text-align: right;
+    padding-right: 8em;
+    font-size: 1.1em;
+}
+nav.sitenavigation p {
+    display: inline-block;
+    margin: 1.3em;
+}
+nav.sitenavigation a:link {
+    text-decoration: none;
+    color: #fff;
+}
+nav.sitenavigation a:visited {
+    color: #fff;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+    color: #19c0ca;
+}
+
+
+/* Logo on navigation bar */
+.logo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    margin-left: 100px;
+    text-indent: -99999px;
+    background: url("images/logo.png") no-repeat;
+}
+
+/* Body */
+body {
+    max-width: 100%;
+    background: #f3f3f3;
+    color: #444;
+    font-size: 100%;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
+}
+
+/* headings */
+h1, h2, h3 {
+    font-family: "Arvo", "Times New Roman", Times, serif;
+}
+
+
+/* Index.html */
+/* Main Content */
+div.top {
+    position: relative;
+    width: 100%;
+}
+.top h2, .top p {
+    position: relative;
+    top: 45%;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 5px rgb(0, 0, 0)
+}
+.top h2 {
+    font-size: 3em;
+    font-weight: 400;
+    margin: 0 auto 20px;
+}
+.top p {
+    font-size: 1.9em;
+    font-weight: 300;
+}
+.intro {
+    height: 100%;
+}
+.intro h2 {
+    position: relative;
+    top: 40%;
+    padding: 0 20%;
+    color: #fff;
+    font-size: 2.6em;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0 1px 5px rgb(0, 0, 0);
+}
+article div.top {
+    height: 730px;
+    background: url("images/bg1.jpg") no-repeat fixed top center #929397;
+    background-size: cover;
+}
+article div.intro{
+    height: 732px;
+    background: url("images/bg2.jpg") no-repeat fixed center bottom #4A6382;
+    background-size: cover;
+}
+
+/* Footer Section */
+footer {
+    min-height: 100px;
+    padding: 1em;
+    background: #304257;
+    overflow: auto;
+    clear: both;
+}
+.social h3 {
+    color: #eee;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+} 
+.social {
+    position: relative;
+    width: 20em; 
+    float: right;
+}
+/* social media icon styles */
+.social a { 
+    display: inline-block;
+    text-decoration: none;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    outline: none;
+    margin: 0 1% 10px 0;
+    text-align: center;
+    font-size: 2em;
+    color: #3f709d;
+    border-radius: 50px;
+    border: 2px solid #3f709d;
+}
+/* Footer text */
+div.footer-credits {
+    margin-top: 80px;
+    color: #3f709d;
+    font-size: 0.7em;
+}
+a.footer-link{
+	text-decoration: none;
+	color: rgb(45, 109, 168);
+}
+
+
+/* About page */
+
+/* Background and profile picture */
+
+.about-top {
+    height: 255px;
+    padding: 280px 0 0;
+    background: url("images/bg-about.jpg") no-repeat center center #4A6382;
+    background-size: cover;
+    
+}
+.contentWrap {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+}
+.about-top img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 75px auto 0px;
+    border: 4px solid #fff;
+    border-radius: 200px;
+    box-shadow: 0 1px 3px rgb(0, 0, 0);
+    background: #4A6382;
+}
+/* center profile pic */
+.center {
+    display: block;
+    top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Main content of about me page */
+div.content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+    width: 85%;
+}
+.aboutme h2 {
+    margin: 10px auto;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.aboutme {
+    text-align: center;
+    padding: 35px 0 20px;
+}
+.aboutme p {
+    margin: 0 auto 50px;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: left;
+}
+.aboutme p.info {
+    padding: 0 18%;
+}
+
+
+/* achievement page */
+.portfolio-top {
+    height: 375px;
+    padding: 230px 0 0;
+    background: url("images/bg-achievements.jpg") no-repeat fixed center top;
+}
+.portfolio-top h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-top: 60px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgb(0, 0, 0);
+}
+.portfolio-bottom {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+div.pic1, div.pic2, div.pic3, div.pic4 {
+    min-height: 350px;
+    margin-top: 2em;
+    padding-bottom: 1em;
+}
+.pic1 img, .pic2 img, .pic3 img, .pic4 img {
+    border: 3px solid #3F709D;
+    border-radius: 4px;
+	box-shadow: 1px 1px 2px grey;
+}
+figure.gctf, figure.math {
+	float: left;
+	padding-left: 2%;
+}
+figure.scholar, figure.cca {
+	float: right;
+	padding-right: 2%;
+}
+#gctftext {
+    margin: 6% 6% 0 0;
+    width: 50%;
+	float: right;
+	line-height: 1.5em;
+    padding: 1.5%;
+}
+#eduscho {
+	width: 50%;
+	float: left;
+	line-height: 1.5em;
+	padding: 1.5%;
+    margin: 6% 0 0 6%;
+}
+#smkctext {
+	float: right;
+	line-height: 1.5em;
+	width: 50%;
+    margin: 6% 6% 0 0;
+    padding: 1.5%;
+}
+#ccatext {
+	float: left;
+	line-height: 1.5em;
+	width: 50%;
+	padding: 1.5%;	
+    margin: 6% 0 0 6%;
+}
+#gctftext, #eduscho, #smkctext, #ccatext {
+    font-size: 1.1em;
+	background-color: white;
+	box-shadow: 1px 1px 8px;
+	border-radius: 5px;
+}
+
+
+
+/* contact page */
+.contact-top {
+    height: 300px;
+    padding: 200px 0 0;
+    background: url("images/bg-contact.jpg") no-repeat fixed center top;
+}
+.contact-top h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-top: 60px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 5px rgb(0, 0, 0);
+}
+.contact-bottom {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 17.5%;
+    height: 850px;
+    width: 85%;
+}
+.contactform {
+    position: absolute;
+    padding: 40px 0;
+    padding-left: 65px;
+    left: 10em;
+    float: left;
+}
+.contactform h3 {
+    margin: 0 auto 20px;
+    text-transform: uppercase;
+}
+.contactform p {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding-right: 350px;
+    height: 170px;
+}
+.reach {
+    position: relative;
+    float: right;
+    width: 35%;
+    padding: 40px 0;
+}
+.reach h3 {
+    margin: 0 auto 20px;
+    text-transform: uppercase;
+}
+.reach p {
+    margin: 0 auto 20px;
+}
+.reach a {
+    text-decoration: none;
+    color: #3F709D;
+}
+.reach i {
+    color: #3F709D;
+    font-size: 1.8em;
+    width: 30px;
+    margin: 0 8px 0 0;
+    vertical-align: -4px;
+    text-align: center;
+}
+#googlemaps {
+    position: relative;
+    clear: both;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
